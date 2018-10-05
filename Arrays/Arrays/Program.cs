@@ -325,9 +325,26 @@ namespace Arrays
             //Cargar una tabla de 20 componentes enteros y calcular la suma de los componentes de posición par 
             //y el producto de los componentes de posición impar. Los valores se generarán aleatoriamente entre 1 y 100.
 
+            int[] tabla = new int[20];
+            Random num = new Random();
+            int suma = 0;
+            //int numeros = num.Next(1, 101);
+            for(int i = 0; i < tabla.Length; i++)
+            {
+                tabla[i] = num.Next(1, 101);
+                Console.WriteLine("los valores " + (i + 1) + " son: " + num.Next(1,101));
+            }
+            if (tabla[] % 2 == 0)
+            {
+                for(int i = 0; i < tabla.Length; i++)
+                {
+                    suma = suma + tabla[i];
+                    Console.WriteLine("La suma de los pares es: " + suma);
+                }
+            else if (tabla [] % 2 != )
+            }
 
-
-          Console.ReadLine();
+            Console.ReadLine();
            
 
 
