@@ -270,31 +270,64 @@ namespace Arrays
             //Cada vez que introduzca un valor entre 0 y 9, mostrar el valor de esa posición del array, 
             //y modificarlo multiplicando por 2.
 
-           
-            int[] tecleo = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
-            int valor;
 
-            do
-            {
-                Console.WriteLine("Introduzca un numero entre 0 y 9");
-                valor = Convert.ToInt32(Console.ReadLine());
-                if (valor valor >= 0 || valor <= 9)
-                {
-                    tecleo[valor] = tecleo[valor] * 2;
-                }
-                
+            //int[] tecleo = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
+            //int valor;
 
-            } while (valor >= 0 || valor <= 9);
-            if (valor < -1)
-            {
-                for (int i = 0; i < numero.Length; i++)
-                {
-                    Console.WriteLine(numero[i] + "\t" + tecleo[i]);
-                }
-            }
+            //do
+            //{
+            //    Console.WriteLine("Introduzca un numero entre 0 y 9");
+            //    valor = Convert.ToInt32(Console.ReadLine());
+            //    if (valor >= 0 && valor <= 9)
+            //    {
+            //        tecleo[valor] = tecleo[valor] * 2;
+            //    }
+            //    else if (valor > 9)
+            //    {
+            //        Console.WriteLine("el valor es incorrecto");
+            //    }
+            //} while (valor > -1);
+
+            //if (valor < -1)
+            //{
+            //    for (int i = 0; i < tecleo.Length; i++)
+            //    {
+            //        Console.WriteLine("el resultado es: " + "\t" + tecleo[i]);
+            //    }
+            //}
 
 
-            Console.ReadLine();
+            //Programa que lee las edades de 20 alumnos (validado entre 18 y 35), las almacena en un array 
+            //y calcula y escribe su media (para probar, se pueden generar aleatoriamente entre 18 y 35).
+            //Random edad = new Random();
+            //int años = edad.Next(18, 36);
+            //int[] alumnos = new int[20];
+            ////double sumaEdad = 0;
+            //for (int i = 0; i < alumnos.Length; i++)
+            //{
+            //    alumnos[i] = edad.Next(18, 36);
+            //    Console.WriteLine("la edad del alumno " + (i + 1) + " es: " + edad.Next(18,36));
+            //}
+            //Console.WriteLine("la media de las edades de los alumnos es: " + alumnos.Average());
+
+            //**** o ****
+            //for (int i = 0; i <alumnos.Length; i++)
+            //{
+            //    sumaEdad = sumaEdad + alumnos[i];
+            //}
+
+            //Console.WriteLine("la media de las edades de los alumnos es: " + (sumaEdad/alumnos.Length));
+
+            //*****************************************************
+            //Ejercicios PRO:
+
+            //Ejercicio 1:
+            //Cargar una tabla de 20 componentes enteros y calcular la suma de los componentes de posición par 
+            //y el producto de los componentes de posición impar. Los valores se generarán aleatoriamente entre 1 y 100.
+
+
+
+          Console.ReadLine();
            
 
 
