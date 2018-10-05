@@ -58,18 +58,243 @@ namespace Arrays
             //Crear un array de 10 ints. Usar un for para asignar los valores de 20 a 11 a las 10 posiciones(en orden descendente).
             //Usar un for para mostrar los 10 valores en pantalla.
 
-            int[] numeros = new int[10];
-            for (int i = 20; i > numeros.Length; i--)
+            //int[] numeros = new int[10];
+            //int valorn = 20;
+            //for (int i = 0; i < numeros.Length; i++)
+            //{
+            //    numeros[i] = valorn;
+            //    valorn--;
+            //    Console.WriteLine(numeros[i] + " , ");
+            //}
+
+
+            //Ejercicio 6:
+            //Crear un array de 3 ints. Usar un for para pedir al usuario que introduzca valores a cada una de las posiciones. 
+            //Usar otro for para mostrarlos en pantalla.
+
+            //int[] valores = new int[3];
+
+            //for (int i = 0; i < valores.Length; i++)
+            //{
+            //    Console.WriteLine("inserte un valor");
+            //    int valor = Convert.ToInt32(Console.ReadLine());
+            //    valores[i] = valor;
+            //}
+            //for (int j = 0; j < valores.Length; j++)
+            //{
+            //    Console.WriteLine(valores[j] + " ");
+            //}
+
+            //Ejercicio 7:
+            //Crear un array de 3 ints. Usar un for para pedir al usuario que introduzca valores a cada una de las posiciones. 
+            //Mirar los valores del array una vez tenga los 3 valores y mostrar en pantalla el más pequeño.
+
+            //int[] num = new int[3];
+            //for (int i = 0; i < num.Length; i++)
+            //{
+            //    Console.WriteLine("inserte un valor");
+            //    num [i] = Convert.ToInt32(Console.ReadLine());
+
+            //}
+            //    Console.WriteLine(" el valor minimo es: " + num.Min());
+
+            //  O
+
+            //int[] num = new int[3];
+            //int comparador = 10000;
+            //for (int i = 0; i < num.Length; i++)
+            //{
+            //    Console.WriteLine("inserte un valor");
+            //    num [i] = Convert.ToInt32(Console.ReadLine());
+            //    if (comparador > num[i])
+            //      {
+            //          comparador = num[i];
+            //      }
+            //}
+            //    Console.WriteLine("el minimo es: " + comparador);
+
+
+            //Ejercicio 8:
+            //Poner los nombres de los meses en un array de 12. Cuando el usuario introduce un número del 1 al 12, 
+            // mostrar el nombre de ese mes en pantalla.
+
+            //string[] meses = {"enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"};
+
+            //Console.WriteLine("inserte un nuemro de 1 al 12");
+            //int nummes = Convert.ToInt32(Console.ReadLine()) - 1;
+            //Console.WriteLine("el mes es: " + meses[nummes]);
+
+            //  *** o ****
+
+            //string[] meses = { "enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre" };
+
+            //Console.WriteLine("inserte un nuemro de 1 al 12");
+            //int nummes = Convert.ToInt32(Console.ReadLine());
+
+            //while (nummes <=0 || nummes > 10)
+            //{
+            //    Console.WriteLine("introduce un mes correcto");
+            //    nummes = Convert.ToInt32(Console.ReadLine());
+            //}
+            //Console.WriteLine("el mes es: " + meses[nummes-1]);
+
+
+            //Ejercicio 9:
+            //Hacer la media de 10 valores utilizando un array.
+
+            //int[] num = new int [10];
+            //int valor = 1;
+            //for (int i = 0; i < num.Length; i++)
+            //{
+            //    num[i] = valor;
+            //    valor++;
+            //    Console.WriteLine("los numeros son: " + num[i]);
+            //}
+
+            //Console.WriteLine("La suma es: " + num.Sum());
+            //Console.WriteLine("la media de los numeros es: " + (num.Sum() / num.Length));
+
+            //o
+
+            //int[] num = new int[10];
+            //int valor = 1;
+            //double suma = 0;
+            //for (int i = 0; i < num.Length; i++)
+            //{
+            //    num[i] = valor;
+            //    valor++;
+            //    Console.WriteLine("los numeros son: " + num[i]);
+            //}
+            //for (int i = 0; i < num.Length; i++)
+            //{
+            //    suma = suma + num[i];
+            //}
+            //Console.WriteLine("La suma es: " + suma);
+            //Console.WriteLine("la media de los numeros es: " + (suma / num.Length));
+
+            // *** o ****
+            //int[] numero = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //double media = numero.Average();
+            //Console.WriteLine("la media es: " + media);
+
+
+            //Ejercicio 10:
+            //Crear un array de 11 ints. Pedir al usuario que introduzca valores entre 0 y 10.
+            //Cada vez que introduzca un dígito, añadir uno al valor en esa posición del array.
+            //Si por ejemplo introduce un 3, sumar uno a la posición 3. Mostrar en pantalla los valores.
+            //Si introduce un número mayor que 10, decir que ese número es incorrecto. 
+            //Si introduce un número negativo, mostrar en pantalla el número de cada posición y el valor que contiene.
+            //Por ejemplo, si introduce 7, 7, 7, 5, 6, 5, 9, 9, 10, -1 mostrar:
+            //0    0
+            //1    0
+            //2    0
+            //3    0
+            //4    0
+            //5    2
+            //6    1
+            //7    3
+            //8    0
+            //9    2
+            //10   1
+
+            //int[] numero = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //int[] tabla = new int[11];
+            //int valor;
+            //do
+            //{
+            //    Console.WriteLine("inserte un valor");
+            //    valor = Convert.ToInt32(Console.ReadLine());
+            //    if (valor == 0)
+            //    {
+            //        tabla[0]++;
+            //    }
+            //    else if (valor == 1)
+            //    {
+            //        tabla[1]++;
+            //    }
+            //    else if (valor == 2)
+            //    {
+            //        tabla[2]++;
+            //    }
+            //    else if (valor == 3)
+            //    {
+            //        tabla[3]++;
+            //    }
+            //    else if (valor == 4)
+            //    {
+            //        tabla[4]++;
+            //    }
+            //    else if (valor == 5)
+            //    {
+            //        tabla[5]++;
+            //    }
+            //    else if (valor == 6)
+            //    {
+            //        tabla[6]++;
+            //    }
+            //    else if (valor == 7)
+            //    {
+            //        tabla[7]++;
+            //    }
+            //    else if (valor == 8)
+            //    {
+            //        tabla[8]++;
+            //    }
+            //    else if (valor == 9)
+            //    {
+            //        tabla[9]++;
+            //    }
+            //    else if (valor == 10)
+            //    {
+            //        tabla[10]++;
+            //    }
+            //    else if (valor >= 10)
+            //    {
+            //        Console.WriteLine("numero incorrecto");
+            //    }
+
+            //} while (valor >= 0);
+
+            //if (valor < -1)
+            //{
+            //    for (int i = 0; i < numero.Length; i++)
+            //    {
+            //        Console.WriteLine(numero[i] + "\t" + tabla[i]);
+            //    }
+            //}
+
+
+            //Ejercicio 11:
+            //Crear un array de 10 valores. Poner el valor 1 en cada una de la posición. 
+            //Pedir al usuario que introduzca un número entre 0 y 9. 
+            //Cada vez que introduzca un valor entre 0 y 9, mostrar el valor de esa posición del array, 
+            //y modificarlo multiplicando por 2.
+
+           
+            int[] tecleo = { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
+            int valor;
+
+            do
             {
-                int [] cifras = {i};
-            }
-            for (int j = 0; j < numeros.Length; j++)
+                Console.WriteLine("Introduzca un numero entre 0 y 9");
+                valor = Convert.ToInt32(Console.ReadLine());
+                if (valor valor >= 0 || valor <= 9)
+                {
+                    tecleo[valor] = tecleo[valor] * 2;
+                }
+                
+
+            } while (valor >= 0 || valor <= 9);
+            if (valor < -1)
             {
-                Console.WriteLine(numeros[j]);
+                for (int i = 0; i < numero.Length; i++)
+                {
+                    Console.WriteLine(numero[i] + "\t" + tecleo[i]);
+                }
             }
 
 
-         Console.ReadLine();
+            Console.ReadLine();
            
 
 
